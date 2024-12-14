@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+    <div class="nav">
+        <h1>User Registration</h1>
+    </div>
+        
+    <center>
+        <div class="user_f">
+            <form action="/users" >
+                <label for="u_name">Name:</label>
+                <input name="u_name" type="text" required>
+                <br>
+                <label for="u_email">Email:</label>
+                <input name="u_email" type="email" required>
+                <br>
+                <label for="phone">Ph no:</label>
+                <input name="phone" type="number" required><br>
+                <label for="u_address">Address:</label>
+                <input name="u_address" type="text" required><br>
+                <label for="credit">Credit_limit:</label>
+                <input name="credit" type="number" required><br>
+                <label for="u_pwd">Password:</label>
+                <input name="u_pwd" type="password" required><br>
+                <button type="submit" class="btu">Register</button>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
