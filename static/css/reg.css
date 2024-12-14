@@ -1,0 +1,47 @@
+.Merchants{
+    float: left;
+    width: 100%;
+    background-color: white;
+}
+.merchant-left{
+    float: left;
+    width: 40%;
+    background-color: green;
+    margin: 10% 0% 11% 5%;
+}
+.register-div,.login-div{
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    font-size: 23px;
+    background-color: transparent;
+}
+.register-div input, .login-div input{
+    float: left;
+    width: 80%;
+    font-size: 18px;
+    margin: 0% 0% 1% 6%;
+    padding: 1% 0% 1% 0%;
+    /*background-color: transparent;*/
+    color:aliceblue;
+    font-weight: 300;
+    border: 1px solid aliceblue;
+}
+.register-div button, .login-div button{
+    float: left;
+    width: 25%;
+    margin: 1% 0% 2% 30%;
+    padding: 1% 0% 1% 0%;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    background-color: transparent;
+}
+.merchant-right{
+    float: right;
+    width: 40%;
+    background-color: green;
+    margin: 12.5% 2% 0% 3%;
+}
