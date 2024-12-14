@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        select{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h2>Product Information Form</h2>
+    <form action="submit_product.php" method="POST">
+        <label for="product_id">Product ID:</label>
+        <input type="text" id="product_id" name="product_id" placeholder="Enter Product ID" required>
+        
+        <label for="product_name">Product Name:</label>
+        <input type="text" id="product_name" name="product_name" placeholder="Enter Product Name" required>
+        
+        <label for="product_price">Price ($):</label>
+        <input type="number" id="product_price" name="product_price" placeholder="Enter Price" step="0.01" required>
+        
+        <label for="app">Select Merchant:</label>
+        <select name="app">
+            <option value="" disabled selected>Select</option>
+            <option value="flipcart">Flipkart</option>
+            <option value="amazon">Amazon</option>
+            <option value="zomato">Zomato</option>
+            <option value="myntra">Myntra</option>
+            <option value="bigbasket">Bigbasket</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
