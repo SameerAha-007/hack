@@ -1,9 +1,19 @@
-.Merchants{
+.Merchants, .Users{
     float: left;
     width: 100%;
     background-color: white;
 }
-.merchant-left{
+.Merchants p{
+    float: left;
+    width: 40%;
+    text-align: center;
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 800;
+    margin: 5% 0% 0% 29%;
+    font-size: 50px;
+    color: green;
+}
+.merchant-left, .user-left{
     float: left;
     width: 40%;
     background-color: green;
@@ -39,9 +49,19 @@
     color: aliceblue;
     background-color: transparent;
 }
-.merchant-right{
+.merchant-right, .user-right{
     float: right;
     width: 40%;
     background-color: green;
     margin: 12.5% 2% 0% 3%;
+}
+.Users p{
+    float: left;
+    width: 40%;
+    text-align: center;
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 800;
+    margin: 1% 0% 0% 29%;
+    font-size: 50px;
+    color: green;
 }
