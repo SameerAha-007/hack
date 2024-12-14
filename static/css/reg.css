@@ -1,9 +1,9 @@
-.Merchants{
+.Merchants, .Users{
     float: left;
     width: 100%;
     background-color: white;
 }
-.merchant-left{
+.merchant-left, .user-left{
     float: left;
     width: 40%;
     background-color: green;
@@ -39,7 +39,7 @@
     color: aliceblue;
     background-color: transparent;
 }
-.merchant-right{
+.merchant-right, .user-right{
     float: right;
     width: 40%;
     background-color: green;
