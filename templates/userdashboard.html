@@ -7,7 +7,37 @@
     <link rel="stylesheet" href="../static/css/dashboard.css">
 </head>
 <body>
-    <div class="nav">
+    <nav>
+        <img src="../static/images/logo.png" alt="Logo" id="logo">
+
+        <div>
+            <h2>Profile</h2>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <form action="/confirm_payment">
+            <label for="product_name">Enter Product Name</label>
+            <input type="text" name="product_name" id="">
+
+            <label for="product_id">Product Id</label>
+            <input type="text" name="product_id" id="">
+
+            <label for="price">Enter Price Of Item in Rupees</label>
+            <input type="text" name="price">
+
+            <label for="app">Select your App</label>
+            <select name="app" id="">
+                <option value="flipcart">Flipcart</option>
+                <option value="amazon">Amazon</option>
+                <option value="bigbasket">BigBasket</option>
+                <option value="zomato">Zomato</option>
+                <option value="myntra">Myntra</option>
+            </select>
+
+            <input type="submit" value="Confirm Payment">
+
 
     </div>
 </body>
