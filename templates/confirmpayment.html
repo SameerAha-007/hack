@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Later | Confirm Payment</title>
+    <link rel="stylesheet" href="../static/css/dashboard.css">
+</head>
+<body>
+    <nav>
+        <img src="../static/images/logo.png" alt="Logo" id="logo">
+
+        <div>
+            <h2>Profile</h2>
+        </div>
+
+    </nav>
+
+
+
+    <div class="payment">
+        <form action="/purchase_item">
+            <label for="amount">Enter Amount to pay Now</label>
+            <input type="text" name="amount">
+
+            <p>Your Credit Limit {{credit_limit}}</p>
+
+            <input type="submit" value="Purchase">
+        </form>
+
+    </div>
+   
+
+</body>
+</html>
