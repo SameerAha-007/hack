@@ -1,6 +1,91 @@
-body{
-    background-color: white;
-    padding: 0;
+/* General Styling */
+body {
     margin: 0;
+    font-family: 'Rubik Doodle Shadow', cursive;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Navigation Sidebar */
+.dashboard-nav {
+    width: 20%;
+    background-color: #4CAF50;
+    padding: 20px;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-nav h1 {
+    font-family: 'Anton SC', sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dashboard-nav ul li {
+    margin: 10px 0;
+}
+
+.dashboard-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.dashboard-nav ul li a:hover {
+    background-color: #45a049;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    width: 80%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.dashboard-content h2 {
+    font-family: 'Anton SC', sans-serif;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Action Cards */
+.dashboard-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.action-card {
+    flex: 1 1 calc(25% - 20px);
+    background: #e8f5e9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.action-card:hover {
+    transform: translateY(-5px);
+    background-color: #c8e6c9;
+}

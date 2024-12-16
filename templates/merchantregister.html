@@ -8,9 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Jaro:opsz@6..72&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="Merchants">
-        <p>MERCHANT PAGE</p>
-        <div class="merchant-left">
+    <div class="Users">
+        <div class = "user-left">
             <div class="register-div">
                 <h1>Register here 👇</h1>
                 <form action="/merchant_register" method="post" onsubmit="alert('Registered Successfully!')">
@@ -22,8 +21,9 @@
                 </form>
             </div>
         </div>
-        <div class="merchant-right">
-            <div class="login-div">
+        <div class="user-right">
+            <div class = "login-div">
+                <div>{{login_error}}</div>
                 <h1>Login here 👇</h1>
                 <form action="/merchant_login" method="post" onsubmit="alert('Login Successful!')">
                     <input type="email" placeholder="Enter merchant email" required name="mer_email">

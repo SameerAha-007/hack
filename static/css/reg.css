@@ -1,67 +1,120 @@
-.Merchants, .Users{
-    float: left;
-    width: 100%;
-    background-color: white;
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Rubik Doodle Shadow', cursive;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-.Merchants p{
-    float: left;
-    width: 40%;
+
+h1 {
+    font-family: 'Anton SC', sans-serif;
+    margin-bottom: 20px;
     text-align: center;
-    font-family: "Rubik Doodle Shadow", system-ui;
-    font-weight: 800;
-    margin: 5% 0% 0% 29%;
-    font-size: 50px;
-    color: green;
+    color: #444;
 }
-.merchant-left, .user-left{
-    float: left;
-    width: 40%;
-    background-color: green;
-    margin: 10% 0% 11% 5%;
-}
-.register-div,.login-div{
-    float: left;
-    width: 100%;
+
+p {
+    font-size: 24px;
+    font-weight: bold;
     text-align: center;
-    color: aliceblue;
-    font-size: 23px;
-    background-color: transparent;
+    font-family: 'Edu AU VIC WA NT Arrows', sans-serif;
+    margin-top: 10px;
+    color: #222;
 }
-.register-div input, .login-div input{
-    float: left;
+
+/* Container Styling */
+.Users {
+    display: flex;
     width: 80%;
-    font-size: 18px;
-    margin: 0% 0% 1% 6%;
-    padding: 1% 0% 1% 0%;
-    /*background-color: transparent;*/
-    color:aliceblue;
-    font-weight: 300;
-    border: 1px solid aliceblue;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ffffff;
 }
-.register-div button, .login-div button{
-    float: left;
-    width: 25%;
-    margin: 1% 0% 2% 30%;
-    padding: 1% 0% 1% 0%;
-    text-align: center;
-    font-size: 20px;
-    border: 1px solid aliceblue;
-    color: aliceblue;
-    background-color: transparent;
+
+.user-left, .user-right {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.merchant-right, .user-right{
-    float: right;
-    width: 40%;
-    background-color: green;
-    margin: 12.5% 2% 0% 3%;
+
+/* Left Section Styling */
+.register-div, .login-div {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #fafafa;
 }
-.Users p{
-    float: left;
-    width: 40%;
-    text-align: center;
-    font-family: "Rubik Doodle Shadow", system-ui;
-    font-weight: 800;
-    margin: 1% 0% 0% 29%;
-    font-size: 50px;
-    color: green;
+
+.register-div h1, .login-div h1 {
+    color: #555;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="submit"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Jaro', sans-serif;
+}
+
+input[type="submit"], button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #45a049;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Right Section Styling */
+.user-right {
+    background: #e8f5e9;
+}
+
+/* Error Message */
+div {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Users {
+        flex-direction: column;
+    }
+
+    .user-left, .user-right {
+        padding: 20px;
+    }
 }

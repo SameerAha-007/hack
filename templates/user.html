@@ -4,15 +4,15 @@
     <title>Hack</title>
     <link rel="stylesheet" href="../static/css/reg.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Jaro:opsz@6..72&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
 </head>
 <body>
+    
+    
     <div class="Users">
-        <p>USER PAGE</p>
         <div class = "user-left">
             <div class="register-div">
                 <h1>Register here 👇</h1>
-                <form action="" method="post" onsubmit="alert(registered)">
+                <form action="/user_register" method="post" >
                     <input type="text" placeholder="Enter user name" required name = "u_name">
                     <input type="email" placeholder="Enter user email" required name = "u_email">
                     <input type="text" placeholder="Enter password" required name = "u_pwd">
@@ -25,11 +25,12 @@
         </div>
         <div class="user-right">
             <div class = "login-div">
+                <div>{{login_error}}</div>
                 <h1>Login here 👇</h1>
-                <form action="" method="post" onsubmit="alert(loginsuccessfully)">
+                <form action="/user_login" method="post" >
                     <input type="email" placeholder="Enter user email" required name = "user_email">
                     <input type="text" placeholder="Enter password" required name = "pwd">
-                    <button type="submit">Login</button>
+                    <input type="submit" value="Login"></input>
                 </form> 
             </div>
         </div>

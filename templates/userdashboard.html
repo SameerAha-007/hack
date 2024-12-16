@@ -3,42 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pay Later | Dashboard</title>
-    <link rel="stylesheet" href="../static/css/dashboard.css">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="../static/css/product.css">
 </head>
 <body>
-    <nav>
-        <img src="../static/images/logo.png" alt="Logo" id="logo">
+    <div class="add-product-container">
+        <div class="form-wrapper">
+            <h1>Add New Product</h1>
+            <form action="/add-product" method="POST" enctype="multipart/form-data">
+                <input type="text" name="product_name" placeholder="Enter Product Name" required>
+                <textarea name="product_description" placeholder="Enter Product Description" rows="4" required></textarea>
+                <input type="number" name="product_price" placeholder="Enter Product Price" min="0" step="0.01" required>
+                <input type="number" name="product_quantity" placeholder="Enter Quantity" min="1" required>
 
-        <div>
-            <h2>Profile</h2>
+                <label for="app-platform">Select Application Platform:</label>
+                <select name="app_platform" id="app-platform" required>
+                    <option value="">-- Select Platform --</option>
+                    <option value="flipkart">Flipkart</option>
+                    <option value="amazon">Amazon</option>
+                    <option value="bigbasket">BigBasket</option>
+                    <option value="myntra">Myntra</option>
+                    <option value="snapdeal">Snapdeal</option>
+                    <option value="nykaa">Nykaa</option>
+                    <option value="ajio">Ajio</option>
+                </select>
+
+                <button type="submit">Add Product</button>
+            </form>
         </div>
-
-    </nav>
-
-    <div class="container">
-        <form action="/confirm_payment">
-            <label for="product_name">Enter Product Name</label>
-            <input type="text" name="product_name" id="">
-
-            <label for="product_id">Product Id</label>
-            <input type="text" name="product_id" id="">
-
-            <label for="price">Enter Price Of Item in Rupees</label>
-            <input type="text" name="price">
-
-            <label for="app">Select your App</label>
-            <select name="app" id="">
-                <option value="flipcart">Flipcart</option>
-                <option value="amazon">Amazon</option>
-                <option value="bigbasket">BigBasket</option>
-                <option value="zomato">Zomato</option>
-                <option value="myntra">Myntra</option>
-            </select>
-
-            <input type="submit" value="Confirm Payment">
-
-
     </div>
 </body>
 </html>
